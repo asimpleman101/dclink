@@ -35,7 +35,7 @@ public class DiscordBot {
         builder.setMemberCachePolicy(MemberCachePolicy.ALL);
         builder.setLargeThreshold(50);
 
-        builder.setActivity(Activity.playing(discordConfiguration.getStatusMessage()));
+        builder.setActivity(Activity.customStatus(discordConfiguration.getStatusMessage()));
 
         jda = builder.build();
 
